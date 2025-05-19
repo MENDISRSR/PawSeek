@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Use for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link To CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- link To JS -->
+    <script src="index.js" defer></script>
+    <!-- For Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- For Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link For Gsap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Link For Gsap - Scroll Trigger -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Link For Lenis - Smooth Scrolling -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <!-- Link For Split Type -->
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+
+    <!-- Link for bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+    <!--Link for typed css-->
+    <link rel="stylesheet" href="/css/requirements.css">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <title>PawSeek | Pet Adoption</title>
+  </head>
+  <body>
+    <!--Nav Bar-->
+    <nav>
+        <a href="index.html" class="brand">
+            <h1>Paw<b class="accent">Seek</b></h1>
+        </a>
+        <div class="menu" >
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a href="index.html">HOME</a>
+            <a href="index.html#pets">PETS</a>
+            <a href="index.html#requirenebts">REQUIREMENTS</a>
+            <a href="index.html#aboutUs">ABOUT US</a>
+            <a href="index.html#stories">STORIES</a>
+            <a href="index.html#contactUs">CONTACT US</a>
+
+            <button class="btn-2" onclick="window.location.href='contactUs.html'">
+                <!-- <p>Contact Us</p>   -->
+                <i class="fas fa-bars menu-btn"></i>             
+            </button>
+        </div>
+    </nav>
+
+    <section id="requirements" class="section">
+        <h2>Adoption Requirements</h2>
+        <div class="table-container">
+            <table class="requirements-table">
+            <thead>
+                <tr>
+                <th>Requirement</th>
+                <th>Mandatory</th>
+                <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="requirements-body">
+                <!-- Rows will be inserted here via JavaScript -->
+            </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Lnk for bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+     
+    <!--Link for typed js-->
+    <script src="/js/requirements.js"></script>
+  </body>
+</html>

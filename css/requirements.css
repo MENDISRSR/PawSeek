@@ -1,0 +1,56 @@
+/* Requirements page */
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.requirements-table {
+  width: 70%;
+  align-items: center;
+  margin: auto;
+  margin-top: 60px;
+  justify-content: center;
+  border-collapse: collapse;
+  font-size: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.requirements-table thead {
+  background-color: #f0f0f0;
+}
+
+.requirements-table th,
+.requirements-table td {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.requirements-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.details-row {
+  display: none;
+  background-color: #fffbe6;
+}
+
+.details-cell {
+  padding: 12px 16px;
+  border-top: none;
+  border-bottom: 1px solid #ddd;
+  font-style: italic;
+  color: #555;
+}
+.toggle-btn {
+  background-color: #ff914d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.toggle-btn:hover {
+  background-color: #e67e22;
+}

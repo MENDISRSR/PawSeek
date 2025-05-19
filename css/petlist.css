@@ -1,0 +1,147 @@
+.pets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 74px;
+}
+
+.pets-headlines {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.pets-headlines i {
+    font-size: 64px;
+    color: var(--accent);
+}
+
+.pets-headlines h1 {
+    font-size: 64px;
+    font-weight: 900;
+    margin-top: 50px;
+}
+
+.btn-pets {
+    width: 260px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--black);
+    filter: drop-shadow(5px 5px 10px #ffbe745e);
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+/* card */
+/* Container for the whole grid */
+.pet-collection {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 40px;
+  justify-items: center;
+}
+
+/* Flip card */
+.pet-item-inner {
+  width: 280px;
+  height: 380px;
+  perspective: 1000px;
+  position: relative;
+}
+
+/* Flip wrapper */
+.pet-item-inner > .pet-item-front,
+.pet-item-inner > .pet-item-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  transition: transform 0.8s;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Show front by default */
+.pet-item-front {
+  transform: rotateY(0deg);
+  z-index: 2;
+}
+
+/* Flip to back */
+.pet-item-back {
+  background-color: #333;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Flip effect on hover */
+.pet-item-inner:hover .pet-item-front {
+  transform: rotateY(180deg);
+}
+
+.pet-item-inner:hover .pet-item-back {
+  transform: rotateY(360deg);
+}
+
+/* Image styling */
+.pet-item-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  
+}
+
+/* Back content styling */
+.pet-item-back h3 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: white;
+}
+
+.pet-item-back h4 {
+  font-size: 25px;
+  margin: 5px 0;
+  text-align: left;
+  margin-left: 10px;
+  padding-bottom: 5px;
+}
+
+.pet-item-back p {
+  font-size: 20px;
+  margin-top: 5px;
+  color: white;
+  text-align: left;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+/* Button styling */
+.btn-4 {
+  padding: 10px 20px;
+  background: white;
+  border: none;
+  border-radius: 6px;
+  color: var(--black);
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-4:hover {
+  background: var(--accent);
+}
