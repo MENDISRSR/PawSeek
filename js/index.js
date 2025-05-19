@@ -86,3 +86,5 @@ sr.reveal(".footer-band");
 sr.reveal(".footer-links", { delay: "500", origin: "left" }); 
 sr.reveal(".footer-contact-info", { delay: "500", origin: "left" }); 
 sr.reveal(".copyright", {delay: "600"});
+
+// Befor add pet details
